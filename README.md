@@ -193,7 +193,7 @@ spi-master-controller/
 │
 ├── synthesis/
 │
-└── images/
+└── 
 ```
 
 ---
@@ -218,7 +218,4 @@ spi-master-controller/
 
 ---
 
-## Author
-
-Developed as part of a Digital VLSI Design portfolio project.
 
