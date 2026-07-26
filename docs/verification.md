@@ -241,3 +241,13 @@ The verification environment validates:
 The SPI Master Controller successfully passed all directed and randomized verification tests.
 
 The final design demonstrates correct protocol implementation, reliable data transfer, and robust support for all four SPI operating modes.
+
+## Key Design Insight
+
+During verification, it was observed that completing the transfer based on the transmit shift count caused incorrect behavior in certain CPHA configurations. After analyzing the SPI timing relationships, the controller was redesigned to complete transfers based on the number of received sample events.
+
+This change ensured:
+- Correct reception of the final bit.
+- Uniform behavior across all four SPI modes.
+- Successful execution of all directed and randomized test cases.
+
