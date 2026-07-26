@@ -84,36 +84,7 @@ The SPI Master consists of the following functional blocks:
 ## Finite State Machine
 
 The controller is implemented using four states.
-
-```
-           +------+
-           | IDLE |
-           +------+
-               |
-           start = 1
-               |
-               v
-           +------+
-           | LOAD |
-           +------+
-               |
-               v
-         +-----------+
-         | TRANSFER  |
-         +-----------+
-               |
-      Last sample completed
-               |
-               v
-           +------+
-           | DONE |
-           +------+
-               |
-               v
-           +------+
-           | IDLE |
-           +------+
-```
+IDLE, START, TRANSFER,DONE
 
 A detailed explanation is available in **docs/fsm.md**
 
